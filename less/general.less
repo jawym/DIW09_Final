@@ -1,0 +1,89 @@
+
+/*--------------------------------------------------------------------------
+	General Style
+--------------------------------------------------------------------------*/
+
+body{
+	background: @body-background;
+}
+
+.section{
+	padding: 30px 0;
+	.translateZ(0);
+}
+
+.section-white{
+	background: #FFF;
+}
+
+.section .container:first-child h1, .section .container:first-child h2, .section .container:first-child h3{
+	margin-top: 0;
+	font-weight: 700;
+}
+
+.input-micro{
+	width: 50px;
+	margin-bottom: 0 !important;
+}
+
+
+
+ul.no-list-style{
+	list-style-type: none;
+	margin-left: 0;
+}
+
+ul.no-list-style li{
+	line-height: 28px;
+}
+
+div[class*="span"]{
+	.transition(~"all .4s linear");
+}
+
+/*--------------------------------------------------------------------------
+	Typography Style
+--------------------------------------------------------------------------*/
+
+body{
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px;
+	line-height: 20px;
+	color: @font-color;
+}
+
+h1{ 
+	color: @heading-color;
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 800; 
+}
+
+h2{ 
+	color: @heading-color;
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 2em;
+	border-bottom: 2px solid @heading-color;
+	line-height: 1.5em;
+	margin: 30px 0;
+	padding-left: 10px;
+}
+
+h3{ 
+	font-family: 'Open Sans', sans-serif; 
+	color: @heading-color;
+	font-size: 1.5em;
+}
+
+h4{ 
+	font-family: 'Open Sans', sans-serif; 
+	color: @heading-color;
+	margin-bottom: 10px;
+}
+
+a{
+	color: @theme-color;
+}
+
+a:hover{
+	color: darken(@theme-color, 20%);
+}
